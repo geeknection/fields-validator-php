@@ -84,7 +84,7 @@ class FieldsValidator {
             }
         }
 
-        if (count($errors) > 0) throw new ExceptionWithData("Parâmetros inválidos", $errors);
+        if (count($errors) > 0) throw new Exception("Parâmetros inválidos", $errors);
 
         return $result;
     }
